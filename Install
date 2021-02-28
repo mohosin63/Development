@@ -2,3 +2,10 @@
 #2 <?php get_footer(); ?>
 #3 <?php wp_head(); ?>
 #4 <?php wp_footer(); ?>
+*wp_cs_js_enqueue
+#5 wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
+#6 wp_enqueue_style('bootstrap-css',get_template_directory_uri().'/assets/css/bootstrap.min.css',array(),'1.0','all');
+#7 add_action('wp_enqueue_scripts','samir_css_js_enqueue');
+*Defualt-css
+#8 wp_enqueue_style('style-css',get_stylesheet_uri());
+#9 <?php echo get_template_directory_uri(); ?>
